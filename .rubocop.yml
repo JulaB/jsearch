@@ -1,0 +1,14 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'docs/**/*'
+    - 'tmp/**/*'
+    - 'node_modules/**/*'
+Metrics/LineLength:
+  Max: 99
+Style/Documentation:
+  Enabled: false

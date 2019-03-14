@@ -1,0 +1,24 @@
+{
+  "name": "jsearch",
+  "license": "MIT",
+  "author": "Julia Bazhukhina",
+  "scripts": {
+    "lint-staged": "$(yarn bin)/lint-staged"
+  },
+  "lint-staged": {
+    "{app,spec}/**/*.rb": [
+      "bundle exec rubocop",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "dependencies": {
+    "@rails/webpacker": "^4.0.2"
+  },
+  "devDependencies": {
+    "lint-staged": "^8.1.5",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
