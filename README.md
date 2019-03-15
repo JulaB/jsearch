@@ -1,4 +1,4 @@
-# Json file search
+# Json file search &nbsp;&nbsp;&nbsp;&nbsp;[![Codeship Status for JulaB/jsearch](https://app.codeship.com/projects/48232120-2908-0137-97f3-6a22c15cbb13/status?branch=master)](https://app.codeship.com/projects/330918)
 
 ## Features
 * exact search. Ex: "some phrase"
