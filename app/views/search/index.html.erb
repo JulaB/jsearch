@@ -1,0 +1,12 @@
+<main class="container">
+  <%= render partial: 'form' %>
+  <div class="search">
+    <% if @items.any? %>
+      <ol class="search__results">
+        <%= render partial: 'item', collection: @items %>
+      </ol>
+    <% else %>
+      <div class="search__empty">No results found</div>
+    <% end %>
+  </div>
+</main>

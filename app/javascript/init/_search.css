@@ -1,0 +1,12 @@
+.search__results {
+  padding-inline-start: 0;
+}
+
+.search__results li {
+  margin: 20px;
+}
+.search__empty {
+  margin: 20px;
+  font-weight: bold;
+  text-align: center;
+}

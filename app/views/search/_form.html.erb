@@ -1,0 +1,8 @@
+<%= form_tag search_index_path, method: :get, class: 'search-form js-search-form' do |f| %>
+  <%= label 'criteria', 'Find your programming languages', class: 'search-form__label' %>
+  <div class="search-form__row">
+    <%= text_field_tag 'criteria', params[:criteria],
+        class: 'search-form__input', placeholder: 'Ex: compiled curly-bracket -ecma by "Brendan Eich"' %>
+    <%= button_tag 'Search', class: 'search-form__button' %>
+  </div>
+<% end %>

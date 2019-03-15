@@ -1,24 +1,29 @@
-# README
+# Json file search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+* exact search. Ex: "some phrase"
+* contains search. Ex: several words
+* exclude search with '-'. Ex: -search-word
+* exact exclude search. Ex: -"Some phrase"
 
-Things you may want to cover:
+## Technologies
+* Ruby 2.6.0
+* Rails 5.2.2.1
+* Minitest
 
-* Ruby version
+## Install
+* yarn install
+* bundle install
+* rails test
 
-* System dependencies
+## Development
+To run server in development `rails server`
 
-* Configuration
+## Running tests
+* rails test
 
-* Database creation
+## Author
+[Julia Bazhukhina](https://github.com/JulaB)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+MIT

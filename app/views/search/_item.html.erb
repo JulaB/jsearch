@@ -1,0 +1,8 @@
+<li class="item">
+  <% item.each do |key, val| %>
+    <div class="item__row">
+      <div class="item__key"><%= key %>:</div>
+      <div class="item__value"> <%= highlight(val, item.matches) %></div>
+    </div>
+  <% end %>
+</li>

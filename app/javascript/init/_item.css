@@ -1,0 +1,16 @@
+.item {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.item__row {
+  display: flex;
+  padding: 5px 0;
+}
+.item__key {
+  flex: 1;
+}
+.item__value {
+  flex: 3;
+}
