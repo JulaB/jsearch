@@ -31,7 +31,7 @@ class CriteriaParserTest < ActiveSupport::TestCase
 
   describe '#exact' do
     it 'checks exact phrase' do
-      assert_equal ['exact phrase'], CriteriaParser.new('"exact phrase"')
+      assert_equal ['exact phrase'], CriteriaParser.new('"exact phrase"').exact
     end
 
     it 'checks complex phrase' do
