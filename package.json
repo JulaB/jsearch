@@ -19,7 +19,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^9.2.0",
     "webpack-dev-server": "^3.7.2"
   }
 }
