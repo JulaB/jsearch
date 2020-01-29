@@ -15,11 +15,11 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@rails/webpacker": "^4.0.7",
+    "@rails/webpacker": "^4.2.2",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "lint-staged": "^9.2.0",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.10.1"
   }
 }
