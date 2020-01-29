@@ -58,9 +58,6 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
-    jbuilder (2.8.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -81,7 +78,6 @@ GEM
       minitest (~> 5.8)
       railties (~> 5.0)
     msgpack (1.2.9)
-    multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
@@ -172,7 +168,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   minitest-rails
   puma (~> 3.12)
