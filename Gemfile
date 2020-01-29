@@ -11,8 +11,7 @@ gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'puma', '~> 3.12'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

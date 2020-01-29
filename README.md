@@ -9,18 +9,33 @@
 ## Technologies
 * Ruby 2.6.5
 * Rails 5.2.2.1
+* Node 10.15.0
+* Yarn 1.21.1
 * Minitest
 
-## Install
-* yarn install
-* bundle install
-* rails test
+## Run on Docker
+### Prepare your Docker containers
+* `docker-compose build`
+* `docker-compose run --rm runner yarn install`
+* `docker-compose run --rm runner ./bin/setup`
 
-## Development
+### Run rails server
+* `docker-compose up rails webpacker`
+
+### Run tests
+* `docker-compose run --rm rails test`
+
+## Run on local machine
+### Install
+* `yarn install`
+* `bundle install`
+* `rails test`
+
+### Development
 To run server in development `rails server`
 
-## Running tests
-* rails test
+### Running tests
+* `rails test`
 
 ## Author
 [Julia Bazhukhina](https://github.com/JulaB)
