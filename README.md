@@ -23,16 +23,16 @@
 * `docker-compose up rails webpacker`
 
 ### Run tests
-* `docker-compose run --rm rails test`
+* `docker-compose run --rm runner rails test`
 
 ## Run on local machine
 ### Install
 * `yarn install`
 * `bundle install`
-* `rails test`
+* `bin/rails test`
 
 ### Development
-To run server in development `rails server`
+To run server in development `bin/rails server`
 
 ### Running tests
 * `rails test`
