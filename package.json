@@ -16,12 +16,10 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@rails/webpacker": "^4.2.2",
     "esbuild": "^0.14.42",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "lint-staged": "^9.2.0",
-    "webpack-dev-server": "^3.10.1"
+    "lint-staged": "^9.2.0"
   }
 }

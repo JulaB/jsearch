@@ -10,8 +10,6 @@ gem 'rails', '6.0.5'
 gem 'jsbundling-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
