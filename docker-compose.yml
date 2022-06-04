@@ -6,7 +6,7 @@ services:
       dockerfile: ./.dockerdev/Dockerfile
       args:
         RUBY_VERSION: '3.1.2'
-        NODE_MAJOR: '10'
+        NODE_MAJOR: '14'
         YARN_VERSION: '1.21.1'
         BUNDLER_VERSION: '2.3.15'
     image: jsearch-dev:2.0.0
