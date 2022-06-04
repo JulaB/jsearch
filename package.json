@@ -3,7 +3,8 @@
   "license": "MIT",
   "author": "Julia Bazhukhina",
   "scripts": {
-    "lint-staged": "$(yarn bin)/lint-staged"
+    "lint-staged": "$(yarn bin)/lint-staged",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   },
   "lint-staged": {
     "{app,spec}/**/*.rb": [
