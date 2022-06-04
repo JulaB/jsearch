@@ -7,7 +7,7 @@
 * exact exclude search. Ex: -"Some phrase"
 
 ## Technologies
-* Ruby 2.6.5
+* Ruby 3.1.2
 * Rails 6.0.5
 * Node 10.15.0
 * Yarn 1.21.1
