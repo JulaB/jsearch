@@ -1,2 +1,2 @@
-server: bin/rails server
-client: bin/webpack-dev-server
+server: bin/rails server -p 3000
+client: yarn build --watch

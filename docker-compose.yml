@@ -6,10 +6,10 @@ services:
       dockerfile: ./.dockerdev/Dockerfile
       args:
         RUBY_VERSION: '3.1.2'
-        NODE_MAJOR: '10'
+        NODE_MAJOR: '14'
         YARN_VERSION: '1.21.1'
         BUNDLER_VERSION: '2.3.15'
-    image: jsearch-dev:2.0.0
+    image: jsearch-dev:3.0.0
     tmpfs:
       - /tmp
 
@@ -22,12 +22,11 @@ services:
       - rails_cache:/app/tmp/cache
       - bundle:/usr/local/bundle
       - node_modules:/app/node_modules
-      - packs:/app/public/packs
+      - assets:/app/assets/builds
     environment:
       - NODE_ENV=development
       - RAILS_ENV=${RAILS_ENV:-development}
       - BOOTSNAP_CACHE_DIR=/bundle/bootsnap
-      - WEBPACKER_DEV_SERVER_HOST=webpacker
       - WEB_CONCURRENCY=1
       - HISTFILE=/app/log/.bash_history
       - EDITOR=vi
@@ -45,23 +44,22 @@ services:
     ports:
       - '3000:3000'
 
-  webpacker:
+  client:
     <<: *app
-    command: ./bin/webpack-dev-server
+    command: yarn build --watch
     ports:
       - '3035:3035'
     volumes:
       - .:/app:cached
       - bundle:/usr/local/bundle
       - node_modules:/app/node_modules
-      - packs:/app/public/packs
+      - assets:/app/assets/builds
     environment:
       - NODE_ENV=${NODE_ENV:-development}
       - RAILS_ENV=${RAILS_ENV:-development}
-      - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
 
 volumes:
   bundle:
   node_modules:
   rails_cache:
-  packs:
+  assets:
