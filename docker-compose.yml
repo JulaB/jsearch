@@ -57,6 +57,7 @@ services:
     environment:
       - NODE_ENV=${NODE_ENV:-development}
       - RAILS_ENV=${RAILS_ENV:-development}
+    stdin_open: true
 
 volumes:
   bundle:

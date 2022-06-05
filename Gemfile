@@ -6,8 +6,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.5'
+gem 'rails', "7.0.3"
 gem 'jsbundling-rails'
+gem 'propshaft'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 
@@ -29,7 +30,7 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen'
   gem 'rubocop', require: false
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console'
   # Spring speeds up development by keeping your application running in
   # the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -37,7 +38,7 @@ group :development do
 end
 
 group :test do
-  gem 'minitest-rails', '>= 6.0'
+  gem 'minitest-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

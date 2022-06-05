@@ -8,7 +8,7 @@
 
 ## Technologies
 * Ruby 3.1.2
-* Rails 6.0.5
+* Rails 7.0.3
 * Node 14.17.0
 * Yarn 1.21.1
 * Minitest
