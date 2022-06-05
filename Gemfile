@@ -8,6 +8,7 @@ ruby '3.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', "7.0.3"
 gem 'jsbundling-rails'
+gem 'propshaft'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 
