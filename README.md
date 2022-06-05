@@ -20,7 +20,7 @@
 * `docker-compose run --rm runner ./bin/setup`
 
 ### Run rails server
-* `docker-compose up rails webpacker`
+* `docker-compose up rails client`
 
 ### Run tests
 * `docker-compose run --rm runner rails test`
